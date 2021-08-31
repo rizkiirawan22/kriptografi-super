@@ -11,10 +11,11 @@
 </head>
 <body>
     <div class="container bg-dark">
+        <form action="">
         <div class="row justify-content-center">
             <h2 class="text-center text-white">Super Enkripsi</h2> 
             <div class="col-4">
-                <textarea name="" id="plaintext" cols="30" rows="10" class="ms-5">Untuk enkripsi isi bagian ini</textarea>
+                <textarea name="" id="plaintext" cols="30" rows="10" class="ms-5">Untuk enkripsi isi bagian ini...</textarea>
             </div>
             <div class="col-4">
                 <div class="mb-3">
@@ -31,15 +32,17 @@
                 </div>
             </div>
             <div class="col-4">
-                <textarea class="d-block float-end me-5" name="" id="cipher" cols="30" rows="10">Untuk deskripsi isi bagian ini</textarea>
+                <textarea class="d-block float-end me-5" name="" id="cipher" cols="30" rows="10">Untuk deskripsi isi bagian ini...</textarea>
             </div>
         </div>
         <div class="d-grid gap-2 col-2 mx-auto">
+            <button type="reset" class="btn btn-primary mb-3">Reset</button>
+        </div>
+    </form>
+        <div class="d-grid gap-2 col-2 mx-auto">
             <button onclick="enkripsi()" class="btn btn-primary mb-3">Encrypt</button>
-            <button onclick="eraseText()" class="btn btn-primary mb-3">Reset</button>
             <button onclick="dekripsi()" class="btn btn-primary mb-3">Decrypt</button>
         </div>
-        
     </div>
     <nav class="navbar fixed-bottom bg-dark" style="height: 50px;">
         <div class="container-fluid justify-content-center">
