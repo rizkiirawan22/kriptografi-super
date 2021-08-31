@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kriptografi Super Enkripsi</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="app.js"></script>
+    <script>alert('Mohon isi semua key nya. Untuk decrypt ada masalah pada decrypt columnar jadi hasil decryptnya salah.');</script>
+</head>
+<body>
+    <div class="container bg-dark">
+        <div class="row justify-content-center">
+            <h2 class="text-center text-white">Super Enkripsi</h2> 
+            <div class="col-4">
+                <textarea name="" id="plaintext" cols="30" rows="10" class="ms-5">Untuk enkripsi isi bagian ini</textarea>
+            </div>
+            <div class="col-4">
+                <div class="mb-3">
+                    <label for="caesar" class="form-label text-white">Caesar Cipher Key</label>
+                    <input class="form-control" type="number" id="caesarKey" required>
+                </div>
+                <div class="mb-3">
+                    <label for="columnar" class="form-label text-white">Columnar Cipher Key</label>
+                    <input class="form-control" type="text" id="columnarKey">
+                </div>
+                <div class="mb-3">
+                    <label for="route" class="form-label text-white">Rail Fence Cipher Key</label>
+                    <input class="form-control" type="number" id="railKey">
+                </div>
+            </div>
+            <div class="col-4">
+                <textarea class="d-block float-end me-5" name="" id="cipher" cols="30" rows="10">Untuk deskripsi isi bagian ini</textarea>
+            </div>
+        </div>
+        <div class="d-grid gap-2 col-2 mx-auto">
+            <button onclick="enkripsi()" class="btn btn-primary mb-3">Encrypt</button>
+            <button onclick="eraseText()" class="btn btn-primary mb-3">Reset</button>
+            <button onclick="dekripsi()" class="btn btn-primary mb-3">Decrypt</button>
+        </div>
+        
+    </div>
+    <nav class="navbar fixed-bottom bg-dark" style="height: 50px;">
+        <div class="container-fluid justify-content-center">
+            <h6 class="text-white">© Kelompok : Rizki Irawan & Khoerulrizal Ramdani</h6>
+        </div>
+    </nav>
+</body>
+</html>
